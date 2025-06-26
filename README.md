@@ -45,6 +45,7 @@ Usa este token para acceder a los endpoints protegidos, agregándolo al header:
 
 ```http
 Authorization: Bearer <tu_token_jwt>
+
 📘 Documentación de la API
 Accede a la interfaz Swagger UI en:
 
