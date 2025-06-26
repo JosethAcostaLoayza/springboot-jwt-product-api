@@ -1,18 +1,13 @@
-# 🛠️ springboot-jwt-product-api
-
-## 📋 Descripción
-
-API RESTful desarrollada con **Java** y **Spring Boot**, que implementa:
+🛠️ springboot-jwt-product-api
+📋 Descripción
+API RESTful desarrollada con Java y Spring Boot, que implementa:
 
 - 🔐 Autenticación segura con JWT
 - 📦 CRUD completo para la entidad `Product` (`id`, `name`, `price`)
 - 🧱 Buenas prácticas de arquitectura en capas
 - 📑 Documentación interactiva con Swagger / OpenAPI 3
 
----
-
-## 🚀 Tecnologías utilizadas
-
+🚀 Tecnologías utilizadas
 - Java 17
 - Spring Boot 3
 - Spring Security
@@ -23,10 +18,7 @@ API RESTful desarrollada con **Java** y **Spring Boot**, que implementa:
 - Lombok
 - Postman (para pruebas)
 
----
-
-## 📦 Endpoints principales
-
+📦 Endpoints principales
 | Método | Ruta                      | Función                 | Autenticación |
 |--------|---------------------------|--------------------------|---------------|
 | POST   | `/api/auth/login`         | Login y generación de JWT | ❌ Pública     |
@@ -35,20 +27,13 @@ API RESTful desarrollada con **Java** y **Spring Boot**, que implementa:
 | PUT    | `/api/products/{id}`      | Editar producto          | ✅ Requiere JWT |
 | DELETE | `/api/products/{id}`      | Eliminar producto        | ✅ Requiere JWT |
 
----
-
-## 🔐 Autenticación JWT
-
-Después de hacer login en `POST /api/auth/login`, obtendrás un token JWT.
-
+🔐 Autenticación JWT
+Después de hacer login en POST /api/auth/login, obtendrás un token JWT.
 Usa este token para acceder a los endpoints protegidos, agregándolo al header:
-
-```http
 Authorization: Bearer <tu_token_jwt>
 
 📘 Documentación de la API
 Accede a la interfaz Swagger UI en:
-
 http://localhost:8080/swagger-ui.html
 o
 http://localhost:8080/swagger-ui/index.html
@@ -60,13 +45,13 @@ cd springboot-jwt-product-api
 
 Ejecuta el proyecto:
 ./mvnw spring-boot:run
-Asegúrate de tener Java 17 y Maven instalados
+
+Asegúrate de tener Java 17 y Maven instalados.
 
 🧪 Pruebas con Postman
 Importa la colección:
 📁 springboot-product-api.postman_collection.json
 Incluye login y todas las operaciones CRUD.
-
 Usa el token JWT generado en /api/auth/login y pégalo en la variable jwt_token.
 
 🧾 Estructura del proyecto
@@ -81,6 +66,7 @@ src
     │   └── service
     └── resources
         └── application.properties
+        
 📄 Licencia
 Este proyecto está bajo licencia MIT.
 ¡Libre de usar, modificar y compartir!
