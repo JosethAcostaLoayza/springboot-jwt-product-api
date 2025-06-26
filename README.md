@@ -73,10 +73,8 @@ Importa la colección:
 `SpringBoot-JWT-Example.json`  
 `SpringBoot-JWT-Products-API.json` 
 Incluye login y todas las operaciones CRUD.  
-Usa el token JWT generado en `/api/auth/login` y pégalo en la variable `jwt_token`.
-
-ó
-
+Usa el token JWT generado en `/api/auth/login` y pégalo en la variable `jwt_token`.  
+o  
 En la petición de login (`POST /api/auth/login`), dentro de la pestaña **Tests** de Postman, se incluye un script que guarda automáticamente el token JWT.
 
 ---
